@@ -25,6 +25,7 @@ namespace SimpleArcade
                         Console.WriteLine(game.getName());
                         Console.WriteLine(game.getInstructions());
                         while(!game.playTurn()){}
+                        Console.WriteLine("Pending History Save code");
                         break;
                     case 2:
                         Console.WriteLine("Hangman pending code");

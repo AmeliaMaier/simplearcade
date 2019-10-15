@@ -8,7 +8,7 @@ namespace SimpleArcade
         private string instructions;
         private string gameName;
         private int correctNumber;
-        private int lastGuess;
+        private int? lastGuess;
 
         void guessmynumbergame ()
         {
@@ -25,6 +25,52 @@ namespace SimpleArcade
         public string getName()
         {
             return gameName;
+        }
+
+        public bool playTurn()
+        {
+            int currentGuessDiff = -1;
+            int lastGuessDiff = -1
+            int currentGuess;
+            Console.WriteLine("Enter guess: ");
+            string userInput = Console.ReadLine();
+            if(!int.TryParse(userInput, out currentGuess))
+            {
+                Console.WriteLine("That number is not recognized. Please try again.");
+                return false;
+            }
+            currentGuess = int.Parse(userInput);
+            currentGuessDiff = Math.Abs(currentGuess - correctNumber);
+            if (currentGuessDiff == 0)
+            {
+                Console.WriteLine("Correct!");
+                return true;
+            }else if (currentGuessDiff <= 5)
+            {
+                Console.WriteLine("You are burning up; so close.");
+            }else if (lastGuess.HasValue)
+            {
+                lastGuessDiff = Math.Abs(lastGuess.Value - correctNumber);
+                if(lastGuessDiff > currentGuessDiff)
+                {
+                    Console.WriteLine("You are getting warmer.");
+                }else if (lastGuessDiff == currentGuessDiff)
+                {
+                    Console.WriteLine("You are staying static.");
+                }else{
+                    Console.WriteLine("You are getting colder.");
+                }
+            }else if (currentGuessDiff <= 15)
+            {
+                Console.WriteLine("You are warm.");
+            }else if (currentGuessDiff <= 30)
+            {
+                Console.WriteLine("You are cool.");
+            }else{
+                Console.WriteLine("You are cold.");
+            }
+            lastGuess = currentGuess;
+            return false;
         }
 
         private int getCorrectNumber()

@@ -21,7 +21,11 @@ namespace SimpleArcade
                 switch (menuSelection)
                 {
                     case 1:
-                        Console.WriteLine("Guess My Number pending code");
+                        GuessMyNumberGame game = new GuessMyNumberGame();
+                        Console.WriteLine(game.getName());
+                        Console.WriteLine(game.getInstructions());
+                        while(!game.playTurn()){}
+                        Console.WriteLine("Pending History Save code");
                         break;
                     case 2:
                         Console.WriteLine("Hangman pending code");

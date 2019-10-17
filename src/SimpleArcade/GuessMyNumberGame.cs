@@ -12,7 +12,7 @@ namespace SimpleArcade
 
         void guessmynumbergame ()
         {
-            instructions = "Enter an upper and lower bound. A random integer between the bounds will be created. Each turn, try to guess the number. You will be given hints as you try.";
+            instructions = "Enter an upper and lower bound. A random integer between the bounds will be created. Each turn, try to guess the number. You will be given hints as you try. Type 'Quite' if you would like to return to the main menu.";
             gameName = "Guess My Number";
             correctNumber = getCorrectNumber();
         }
@@ -36,8 +36,15 @@ namespace SimpleArcade
             string userInput = Console.ReadLine();
             if(!int.TryParse(userInput, out currentGuess))
             {
-                Console.WriteLine("That number is not recognized. Please try again.");
-                return false;
+                if(userInput == "Quite")
+                {
+                    Console.WriteLine("Closing Game.");
+                    return true;
+                }else
+                {
+                    Console.WriteLine("That number is not recognized. Please try again.");
+                    return false;
+                }
             }
             currentGuess = int.Parse(userInput);
             currentGuessDiff = Math.Abs(currentGuess - correctNumber);
@@ -97,7 +104,7 @@ namespace SimpleArcade
                 {
                     Console.WriteLine("That number is not recognized. Please try again.");
                 }
-            }    
+            }
             return lowerBound;
         }
 
@@ -124,14 +131,14 @@ namespace SimpleArcade
                 {
                     Console.WriteLine("That number is not recognized. Please try again.");
                 }
-            } 
+            }
             return upperBound;
         }
 
         private int getRandomNumber(int lowerBound, int upperBound)
         {
             Random rnd = new Random();
-            return rnd.Next(lowerBound, upperBound + 1); 
+            return rnd.Next(lowerBound, upperBound + 1);
         }
 
     }

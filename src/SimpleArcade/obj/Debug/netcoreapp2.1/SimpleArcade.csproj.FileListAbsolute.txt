@@ -1,0 +1,11 @@
+d:\repos\SimpleArcade\src\SimpleArcade\bin\Debug\netcoreapp2.1\SimpleArcade.deps.json
+d:\repos\SimpleArcade\src\SimpleArcade\bin\Debug\netcoreapp2.1\SimpleArcade.runtimeconfig.json
+d:\repos\SimpleArcade\src\SimpleArcade\bin\Debug\netcoreapp2.1\SimpleArcade.runtimeconfig.dev.json
+d:\repos\SimpleArcade\src\SimpleArcade\bin\Debug\netcoreapp2.1\SimpleArcade.dll
+d:\repos\SimpleArcade\src\SimpleArcade\bin\Debug\netcoreapp2.1\SimpleArcade.pdb
+d:\repos\SimpleArcade\src\SimpleArcade\obj\Debug\netcoreapp2.1\SimpleArcade.csprojAssemblyReference.cache
+d:\repos\SimpleArcade\src\SimpleArcade\obj\Debug\netcoreapp2.1\SimpleArcade.csproj.CoreCompileInputs.cache
+d:\repos\SimpleArcade\src\SimpleArcade\obj\Debug\netcoreapp2.1\SimpleArcade.AssemblyInfoInputs.cache
+d:\repos\SimpleArcade\src\SimpleArcade\obj\Debug\netcoreapp2.1\SimpleArcade.AssemblyInfo.cs
+d:\repos\SimpleArcade\src\SimpleArcade\obj\Debug\netcoreapp2.1\SimpleArcade.dll
+d:\repos\SimpleArcade\src\SimpleArcade\obj\Debug\netcoreapp2.1\SimpleArcade.pdb

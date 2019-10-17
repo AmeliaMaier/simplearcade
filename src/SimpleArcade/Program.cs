@@ -22,6 +22,7 @@ namespace SimpleArcade
                 {
                     case 1:
                         GuessMyNumberGame game = new GuessMyNumberGame();
+                        game.setupCorrectNumber();
                         Console.WriteLine(game.getName());
                         Console.WriteLine(game.getInstructions());
                         while(!game.playTurn()){}

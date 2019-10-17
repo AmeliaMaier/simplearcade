@@ -84,14 +84,14 @@ namespace SimpleArcade
             return false;
         }
 
-        private int getCorrectNumber()
+        public int getCorrectNumber()
         {
             int lowerBound = getLowerBound();
             int upperBound = getUpperBound(lowerBound);
             return getRandomNumber(lowerBound, upperBound);
         }
 
-        private int getLowerBound()
+        public int getLowerBound()
         {
             bool notInt = true;
             int lowerBound = 0;
@@ -112,7 +112,7 @@ namespace SimpleArcade
             return lowerBound;
         }
 
-        private int getUpperBound(int lowerBound)
+        public int getUpperBound(int lowerBound)
         {
             bool notInt = true;
             int upperBound = 0;
@@ -139,7 +139,7 @@ namespace SimpleArcade
             return upperBound;
         }
 
-        private int getRandomNumber(int lowerBound, int upperBound)
+        public int getRandomNumber(int lowerBound, int upperBound)
         {
             Random rnd = new Random();
             return rnd.Next(lowerBound, upperBound + 1);

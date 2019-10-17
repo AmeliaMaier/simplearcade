@@ -3,17 +3,21 @@ using System.Collections.Generic;
 
 namespace SimpleArcade
 {
-    public class GuessMyNumberGame : GameInterface
+    public class GuessMyNumberGame
     {
         private string instructions;
         private string gameName;
         private int correctNumber;
         private int? lastGuess;
 
-        void guessmynumbergame ()
+        public GuessMyNumberGame ()
         {
             instructions = "Enter an upper and lower bound. A random integer between the bounds will be created. Each turn, try to guess the number. You will be given hints as you try. Type 'Quite' if you would like to return to the main menu.";
             gameName = "Guess My Number";
+        }
+
+        public void setupCorrectNumber()
+        {
             correctNumber = getCorrectNumber();
         }
 

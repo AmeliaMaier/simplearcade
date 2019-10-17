@@ -1,0 +1,17 @@
+d:\repos\SimpleArcade\test\SimpleArcade.Tests\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+d:\repos\SimpleArcade\test\SimpleArcade.Tests\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+d:\repos\SimpleArcade\test\SimpleArcade.Tests\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+d:\repos\SimpleArcade\test\SimpleArcade.Tests\bin\Debug\netcoreapp2.1\SimpleArcade.Tests.deps.json
+d:\repos\SimpleArcade\test\SimpleArcade.Tests\bin\Debug\netcoreapp2.1\SimpleArcade.Tests.runtimeconfig.json
+d:\repos\SimpleArcade\test\SimpleArcade.Tests\bin\Debug\netcoreapp2.1\SimpleArcade.Tests.runtimeconfig.dev.json
+d:\repos\SimpleArcade\test\SimpleArcade.Tests\bin\Debug\netcoreapp2.1\SimpleArcade.Tests.dll
+d:\repos\SimpleArcade\test\SimpleArcade.Tests\bin\Debug\netcoreapp2.1\SimpleArcade.Tests.pdb
+d:\repos\SimpleArcade\test\SimpleArcade.Tests\bin\Debug\netcoreapp2.1\SimpleArcade.dll
+d:\repos\SimpleArcade\test\SimpleArcade.Tests\bin\Debug\netcoreapp2.1\SimpleArcade.pdb
+d:\repos\SimpleArcade\test\SimpleArcade.Tests\obj\Debug\netcoreapp2.1\SimpleArcade.Tests.csprojAssemblyReference.cache
+d:\repos\SimpleArcade\test\SimpleArcade.Tests\obj\Debug\netcoreapp2.1\SimpleArcade.Tests.csproj.CoreCompileInputs.cache
+d:\repos\SimpleArcade\test\SimpleArcade.Tests\obj\Debug\netcoreapp2.1\SimpleArcade.Tests.AssemblyInfoInputs.cache
+d:\repos\SimpleArcade\test\SimpleArcade.Tests\obj\Debug\netcoreapp2.1\SimpleArcade.Tests.AssemblyInfo.cs
+d:\repos\SimpleArcade\test\SimpleArcade.Tests\obj\Debug\netcoreapp2.1\SimpleArcade.Tests.csproj.CopyComplete
+d:\repos\SimpleArcade\test\SimpleArcade.Tests\obj\Debug\netcoreapp2.1\SimpleArcade.Tests.dll
+d:\repos\SimpleArcade\test\SimpleArcade.Tests\obj\Debug\netcoreapp2.1\SimpleArcade.Tests.pdb

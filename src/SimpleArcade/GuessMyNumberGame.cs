@@ -30,7 +30,7 @@ namespace SimpleArcade
         public bool playTurn()
         {
             int currentGuessDiff = -1;
-            int lastGuessDiff = -1
+            int lastGuessDiff = -1;
             int currentGuess;
             Console.WriteLine("Enter guess: ");
             string userInput = Console.ReadLine();

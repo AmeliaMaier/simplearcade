@@ -1,6 +1,6 @@
 namespace SimpleArcade
 {
-    public class TicTacToeGame : GameInterface
+    public class TicTacToeGame : GameI
     {
         
     }

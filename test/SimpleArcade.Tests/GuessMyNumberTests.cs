@@ -3,7 +3,7 @@ using Xunit;
 
 namespace SimpleArcade.Tests
 {
-    public class GuessMyNumberGameTests
+    public class GuessMyNumberTests
     {
         [Fact]
         public void gameInstructions()

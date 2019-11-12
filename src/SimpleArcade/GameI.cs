@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 namespace SimpleArcade
 {
-    public interface GameInterface
+    public interface GameI
     {
 
 

@@ -1,6 +1,6 @@
 namespace SimpleArcade
 {
-    public class HangmanGame : GameI
+    public class HangmanGame : IGame
     {
         
     }

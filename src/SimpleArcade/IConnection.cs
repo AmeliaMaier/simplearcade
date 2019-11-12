@@ -1,6 +1,6 @@
 namespace SimpleArcade
 {
-    public interface ConnectionI
+    public interface IConnection
     {
          
     }

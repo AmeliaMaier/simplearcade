@@ -3,6 +3,11 @@ using System.Collections.Generic;
 
 namespace SimpleArcade
 {
+    /*
+    need to: 
+    break play turn up so it is testable
+    pull out random into a util so it is testable
+    */
     public class GuessMyNumberGame
     {
         private string instructions;

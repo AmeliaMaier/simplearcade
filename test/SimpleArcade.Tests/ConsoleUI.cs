@@ -23,12 +23,12 @@ namespace SimpleArcade.Tests
 
         public void Write(string message)
         {
-            LinesToWrite.Append(message);
+            LinesToWrite.Add(message);
         }
 
         public void WriteLine(string message)
         {
-            LinesToWrite.Append(message + '\n');
+            LinesToWrite.Add(message + '\n');
         }
 
         public string ReadLine()

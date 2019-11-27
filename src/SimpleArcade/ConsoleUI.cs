@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+
 namespace SimpleArcade
 {
     public class ConsoleUI : IUserInterface

@@ -21,7 +21,7 @@ namespace SimpleArcade
                 switch (menuSelection)
                 {
                     case 1:
-                        GuessMyNumberGame game = new GuessMyNumberGame();
+                        GuessMyNumberGame game = new GuessMyNumberGame(new ConsoleUI());
                         game.setupCorrectNumber();
                         Console.WriteLine(game.getName());
                         Console.WriteLine(game.getInstructions());

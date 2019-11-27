@@ -1,32 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\repos\\SimpleArcade\\src\\SimpleArcade\\SimpleArcade.csproj": {}
+    "/home/amelia/projects/simplearcade/src/SimpleArcade/SimpleArcade.csproj": {}
   },
   "projects": {
-    "D:\\repos\\SimpleArcade\\src\\SimpleArcade\\SimpleArcade.csproj": {
+    "/home/amelia/projects/simplearcade/src/SimpleArcade/SimpleArcade.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\repos\\SimpleArcade\\src\\SimpleArcade\\SimpleArcade.csproj",
+        "projectUniqueName": "/home/amelia/projects/simplearcade/src/SimpleArcade/SimpleArcade.csproj",
         "projectName": "SimpleArcade",
-        "projectPath": "D:\\repos\\SimpleArcade\\src\\SimpleArcade\\SimpleArcade.csproj",
-        "packagesPath": "C:\\Users\\ameli\\.nuget\\packages\\",
-        "outputPath": "D:\\repos\\SimpleArcade\\src\\SimpleArcade\\obj\\",
+        "projectPath": "/home/amelia/projects/simplearcade/src/SimpleArcade/SimpleArcade.csproj",
+        "packagesPath": "/home/amelia/.nuget/packages/",
+        "outputPath": "/home/amelia/projects/simplearcade/src/SimpleArcade/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ameli\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/home/amelia/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -44,16 +37,23 @@
         "netcoreapp2.1": {
           "dependencies": {
             "Microsoft.NETCore.App": {
+              "suppressParent": "All",
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
         }
       }
     }

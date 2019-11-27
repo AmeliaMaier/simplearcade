@@ -1,7 +1,16 @@
+using System;
+using System.Collections.Generic;
+
 namespace SimpleArcade
 {
     public class RandomUtility
     {
+        private IUserInterface ui;
+
+        public RandomUtility(IUserInterface userInterface)
+        {
+            ui = userInterface;
+        }
 
         public int getLowerBound()
         {
@@ -10,15 +19,15 @@ namespace SimpleArcade
             string userInput;
             while (notInt)
             {
-                Console.WriteLine("Enter your lower bound: ");
-                userInput = Console.ReadLine();
+                ui.WriteLine("Enter your lower bound: ");
+                userInput = ui.ReadLine();
                 if(int.TryParse(userInput, out lowerBound))
                 {
                     notInt = false;
                     lowerBound = int.Parse(userInput);
                 }else
                 {
-                    Console.WriteLine("That number is not recognized. Please try again.");
+                    ui.WriteLine("That number is not recognized. Please try again.");
                 }
             }
             return lowerBound;
@@ -31,8 +40,8 @@ namespace SimpleArcade
             string userInput;
             while (notInt)
             {
-                Console.WriteLine("Enter your upper bound: ");
-                userInput = Console.ReadLine();
+                ui.WriteLine("Enter your upper bound: ");
+                userInput = ui.ReadLine();
                 if(int.TryParse(userInput, out lowerBound))
                 {
                     notInt = false;
@@ -41,11 +50,11 @@ namespace SimpleArcade
                     if(upperBound <= lowerBound)
                     {
                         notInt = true;
-                        Console.WriteLine("Your upper bound is not greater than your lower bound. Please try again.");
+                        ui.WriteLine("Your upper bound is not greater than your lower bound. Please try again.");
                     }
                 }else
                 {
-                    Console.WriteLine("That number is not recognized. Please try again.");
+                    ui.WriteLine("That number is not recognized. Please try again.");
                 }
             }
             return upperBound;

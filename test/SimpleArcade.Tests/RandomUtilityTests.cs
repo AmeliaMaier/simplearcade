@@ -1,3 +1,4 @@
+using System.Reflection;
 using System;
 using Xunit;
 
@@ -40,8 +41,47 @@ namespace SimpleArcade.Tests
             Assert.NotNull(actualRandomNumber);
         }
 
-        // getLowerBound - valid int pos
+        [Fact]
+        public void getLowerBoundValidIntPossitive()
+        {
+            RandomUtility rand = new RandomUtility(ui);
+            ui.SetLinesToRead("2");
+            int expectedLowerBound = 2;
+            ui.ClearLinesToWrite();
+            int actualLowerBound = rand.getLowerBound();
+            Assert.Equal(expectedLowerBound, actualLowerBound);
+        }
+
+        [Fact]
+        public void getLowerBoundValidIntNegative()
+        {
+            RandomUtility rand = new RandomUtility(ui);
+            ui.SetLinesToRead("-2");
+            int expectedLowerBound = -2;
+            ui.ClearLinesToWrite();
+            int actualLowerBound = rand.getLowerBound();
+            Assert.Equal(expectedLowerBound, actualLowerBound);
+        }
+
+        public void getLowerBoundOutputValid()
+        {
+            RandomUtility rand = new RandomUtility(ui);
+            ui.SetLinesToRead('2');
+            ui.ClearLinesToWrite();
+            rand.getLowerBound();
+            List<String> actualOutput = ui.GetLinesToWrite();
+            List<String> expectedOutput = new List<String>() {"Enter your lower bound: " + '\n'};
+            Assert.Equal(expectedOutput, actualOutput);
+        }
+
+        [Fact]
+        public void emptyTestCase()
+        {
+            RandomUtility rand = new RandomUtility(ui);
+        }
+
         // getLowerBound - valid int neg
+        // getLowerBound - output invalid then valid
         // getLowerBound - string not int
         // getLowerBound - double not int
         // getLowerBound - null not int
@@ -50,6 +90,8 @@ namespace SimpleArcade.Tests
 
         // getUpperBound - valid int pos
         // getUpperBound - valid int neg
+        // getUpperBound - output valid
+        // getUpperBound - output invalid then valid
         // getUpperBound - invalid int pos (too low)
         // getUpperBound - invalid int neg (to low)
         // getUpperBound - string not int
